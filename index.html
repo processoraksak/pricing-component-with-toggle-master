@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Pricing Component Web Desing" />
+    <meta name="author" content="processoraksak" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Pricing Component with Toggle Master</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Our Pricing</h1>
+      <header>
+        <p style="margin-right: 1em">Annually</p>
+        <div class="turn-bg">
+          <div class="turn-circle" onclick="turnCircleClick()"></div>
+        </div>
+        <p style="margin-left: 1em">Monthly</p>
+      </header>
+      <div class="card-container">
+        <div class="card card-1">
+          <h2>Basic</h2>
+          <h3 id="dollar-1">&dollar;19.99</h3>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3 GB</p>
+          <hr />
+          <button>Learn More</button>
+        </div>
+
+        <div class="card card-2">
+          <h2>Professional</h2>
+          <h3 id="dollar-2">&dollar;24.99</h3>
+          <hr />
+          <p>1 TB Storage</p>
+          <hr />
+          <p>5 Users Allowed</p>
+          <hr />
+          <p>Send up to 10 GB</p>
+          <hr />
+          <button>Learn More</button>
+        </div>
+
+        <div class="card card-3">
+          <h2>Master</h2>
+          <h3 id="dollar-3">&dollar;39.99</h3>
+          <hr />
+          <p>2 TB Storage</p>
+          <hr />
+          <p>10 Users Allowed</p>
+          <hr />
+          <p>Send up to 20 GB</p>
+          <hr />
+          <button>Learn More</button>
+        </div>
+      </div>
+    </main>
+    <img id="bg-top" src="./images/bg-top.svg" alt="Background Image" />
+    <img id="bg-bottom" src="./images/bg-bottom.svg" alt="Background Image" />
+    <script src="index.js"></script>
+  </body>
+</html>
